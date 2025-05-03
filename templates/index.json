@@ -65,8 +65,8 @@
         "transition_type": "fade_with_text",
         "autoplay": true,
         "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+        "background": "#ffffff",
+        "background_gradient": "linear-gradient(135deg, rgba(111, 177, 252, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
     "image-link-blocks": {
@@ -159,7 +159,7 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "Promotion text",
+        "text": "Caixas Misteriosas",
         "text_size": "large",
         "text_style": "fill",
         "scrolling_mode": "auto",
