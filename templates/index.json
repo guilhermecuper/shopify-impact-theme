@@ -950,6 +950,19 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "custom_html_Yzakcz": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div style=\"max-width: 800px; margin: 0 auto; padding: 0 20px;\">\n  <model-viewer src=\"https://cdn.shopify.com/3d/models/067ac9a214eeb750/base_basic_shaded.glb\" alt=\"Bonequinho 3D\" auto-rotate=\"\" rotation-per-second=\"30deg\" camera-controls=\"\" ar=\"\" style=\"width: 100%; height: 500px;\">\n  </model-viewer>\n</div>\n\n<script type=\"module\" src=\"https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js\"></script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -968,6 +981,7 @@
     "featured-product",
     "feature-chart",
     "faq",
-    "image-link-blocks"
+    "image-link-blocks",
+    "custom_html_Yzakcz"
   ]
 }
