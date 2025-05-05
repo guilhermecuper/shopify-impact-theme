@@ -169,7 +169,7 @@
           "type": "item",
           "settings": {
             "title": "100%",
-            "subheading": "Showcase a benefit of your product",
+            "subheading": "",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -386,6 +386,7 @@
           "type": "collection",
           "settings": {
             "collection": "clothing-accessories",
+            "image": "shopify://shop_images/Se2bf5c9b837f4838a8bc56d7f2b2dfff6.webp",
             "subheading": "",
             "title": "",
             "url": "",
@@ -400,6 +401,7 @@
           "type": "collection",
           "settings": {
             "collection": "household-supplies",
+            "image": "shopify://shop_images/S98c16998482e402bb84d246e7c9dc003I.webp",
             "subheading": "",
             "title": "",
             "url": "",
