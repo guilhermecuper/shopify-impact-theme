@@ -42,6 +42,12 @@
           "type": "payment_terms",
           "settings": {}
         },
+        "text_zCh8VA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cada boneco vem em uma blind box, trazendo o charme da surpresa e o desejo de completar a coleção.<br/><br/>Seu visual único mistura fofura com atitude, sendo perfeito para decorar ou presentear.<br/><br/>Ter um Labubu é estar conectado com o que há de mais atual, criativo e desejado no mundo pop e fashion.</p>"
+          }
+        },
         "separator": {
           "type": "separator",
           "settings": {}
@@ -50,6 +56,20 @@
           "type": "description",
           "settings": {
             "collapse_content": true
+          }
+        },
+        "collapsible_text_ww4VTa": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Nossas Garantias",
+            "content": "<p>Nossa garantia é simples: compre, experimente e se você não estiver 100% satisfeito, reembolsaremos você dentro de 30 dias—sem perguntas. Produtos defeituosos são substituídos imediatamente e nossa equipe de suporte dedicada está aqui para ajudar. Sua compra está sempre protegida!</p>"
+          }
+        },
+        "collapsible_text_EgJPtF": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Informação de Entrega",
+            "content": "<p>O tempo de entrega varia de <strong>1</strong> a <strong>3 semanas</strong>, mas 99% das vezes chega antes disso.<br/><br/></p>"
           }
         },
         "variant_picker": {
@@ -85,8 +105,11 @@
         "price",
         "rating",
         "payment_terms",
+        "text_zCh8VA",
         "separator",
         "description",
+        "collapsible_text_ww4VTa",
+        "collapsible_text_EgJPtF",
         "variant_picker",
         "quantity_selector",
         "buy_buttons"
@@ -231,6 +254,7 @@
         "item_CmFQ4h",
         "item_HVMRXc"
       ],
+      "disabled": true,
       "name": "Multi-column",
       "settings": {
         "full_width": true,
