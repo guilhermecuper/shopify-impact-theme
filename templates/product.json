@@ -264,11 +264,11 @@
             "page": ""
           }
         },
-        "tab_c4Drtb": {
+        "tab_6Rhf7W": {
           "type": "tab",
           "settings": {
-            "title": "Atendimento",
-            "content": "<p><strong>Atendimento feito por pessoas de verdade, antes e depois da compra.</strong>Nada de respostas automáticas ou chatbots — aqui, você conversa com quem realmente entende e se importa.</p>",
+            "title": "Frete Grátis para todo o Brasil",
+            "content": "<p><strong>Temos centros de distribuição no Brasil e em outros países para acelerar sua entrega. </strong>Isso significa mais agilidade e menos espera pra ter seu Labubu em mãos.</p>",
             "page": ""
           }
         },
@@ -280,11 +280,11 @@
             "page": ""
           }
         },
-        "tab_6Rhf7W": {
+        "tab_c4Drtb": {
           "type": "tab",
           "settings": {
-            "title": "Frete Grátis para todo o Brasil",
-            "content": "<p><strong>Temos centros de distribuição no Brasil e em outros países para acelerar sua entrega. </strong>Isso significa mais agilidade e menos espera pra ter seu Labubu em mãos.</p>",
+            "title": "Atendimento",
+            "content": "<p><strong>Atendimento feito por pessoas de verdade, antes e depois da compra. </strong>Nada de respostas automáticas ou chatbots — aqui, você conversa com quem realmente entende e se importa.</p>",
             "page": ""
           }
         }
@@ -292,9 +292,9 @@
       "block_order": [
         "tab_FcEj3L",
         "tab_F3z4kA",
-        "tab_c4Drtb",
+        "tab_6Rhf7W",
         "tab_i4EYTp",
-        "tab_6Rhf7W"
+        "tab_c4Drtb"
       ],
       "name": "Tabs",
       "settings": {
