@@ -49,7 +49,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "collapse_content": false
+            "collapse_content": true
           }
         },
         "variant_picker": {
@@ -109,28 +109,6 @@
         "input_text_color": ""
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "recommendations_count": 6,
-        "products": [],
-        "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "You may also like",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "media_with_text_HCfKi7": {
       "type": "media-with-text",
       "blocks": {
@@ -178,14 +156,14 @@
         "heading_CGHbY3": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "Labubu é mais que um boneco — é item de desejo.",
             "heading_tag": "h1"
           }
         },
         "richtext_JPJaMQ": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p><br/><br/>Cada unidade vem em uma <strong>blind box surpresa</strong>, e parte da experiência é essa: <strong>abrir a embalagem e descobrir aleatoriamente</strong> qual personagem incrível você vai receber.</p><p>É <strong>colecionável, divertido e viciante</strong>, do tipo que conquista quem ama moda, design e tudo que é tendência nas redes.</p><p>Seja para presentear, decorar ou iniciar sua própria coleção, ter um Labubu é entrar para um universo que só cresce — e <strong>quem tem um, sempre quer mais.</strong></p>"
           }
         }
       },
@@ -200,6 +178,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/0506.gif",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -330,14 +309,36 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Você talvez goste",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "related-products",
     "media_with_text_HCfKi7",
     "image_with_text_overlay_NPEHCw",
     "multi_column_fAWN9X",
-    "tabs_9ttK6c"
+    "tabs_9ttK6c",
+    "related-products"
   ]
 }
