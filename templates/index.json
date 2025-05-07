@@ -880,6 +880,7 @@
         "1664424046b00c932c-0": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/foto-labubu-carrossel.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -892,6 +893,7 @@
         "1664424046b00c932c-1": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/foto-labubu-carrossel-3.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -904,6 +906,7 @@
         "1664424046b00c932c-2": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/foto-labubu-carrossel_882099c0-4baf-4b2d-a239-372a645b4ff7.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -916,6 +919,7 @@
         "1664424046b00c932c-3": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/foto-labubu-carrossel-6.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
@@ -928,6 +932,7 @@
         "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/foto-labubu-carrossel-5.png",
             "stretch_image": true,
             "link_text": "",
             "link_url": "",
