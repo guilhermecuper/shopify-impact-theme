@@ -365,6 +365,63 @@
         "drag_cursor_color": "#000000"
       }
     },
+    "multiple_images_with_text_epVpMH": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_VEj9x8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Sa68b9453e5cc4e3aa61bf76324750068Y.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "shopify://collections/clothing-accessories",
+            "button_text": "Compre Agora"
+          }
+        },
+        "item_mkFiEn": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/S98c16998482e402bb84d246e7c9dc003I.webp",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": "Compre Agora"
+          }
+        },
+        "item_YTwTwL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Sf77c1027455441ffb99370ef410a483cE.webp",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Image with text",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": "Compre Agora"
+          }
+        }
+      },
+      "block_order": [
+        "item_VEj9x8",
+        "item_mkFiEn",
+        "item_YTwTwL"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "collection_list_Vzihtr": {
       "type": "collection-list",
       "blocks": {
@@ -990,6 +1047,7 @@
     "image-with-text-overlay",
     "media-grid",
     "before-after-image",
+    "multiple_images_with_text_epVpMH",
     "collection_list_Vzihtr",
     "press",
     "hot-spots",
