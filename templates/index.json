@@ -804,38 +804,62 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "O que são Labubu?",
+            "content": "<p>Labubus são figuras colecionáveis com um design único, caracterizadas pela sua aparência fofinha que mistura fofura e travessura.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "Vocês enviam para todo o Brasil",
+            "content": "<p>Sim, enviamos para todo o Brasil com <strong>Frete Grátis!</strong></p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Como eu rastreio ao meu produto?",
+            "content": "<p>Estaremos disponibilizando um código de rastreio para que você possa acompanhar ao seu pedido.</p>"
+          }
+        },
+        "item_yMJwRQ": {
+          "type": "item",
+          "settings": {
+            "title": "Como eu cuido do meu Labubu?",
+            "content": "<p>Para manter seus bonecos em perfeitas condições:<br/><br/>Evite expô-las à luz solar direta por longos períodos.<br/><br/>Limpe-as cuidadosamente com um pano seco para remover a poeira.<br/><br/>Guarde-as em um local seco para evitar a deterioração do material.</p>"
+          }
+        },
+        "item_t7JfNc": {
+          "type": "item",
+          "settings": {
+            "title": "Posso devolver o meu Labubu caso eu não goste do modelo que veio?",
+            "content": "<p>Devido à natureza do Labubu (caixas surpresa), não aceitamos devoluções com base no modelo recebido. No entanto, se o produto chegar defeituoso ou danificado, oferecemos uma solução rápida: substituição ou reembolso dentro de 30 dias da compra.</p>"
+          }
+        },
+        "item_gXEVyL": {
+          "type": "item",
+          "settings": {
+            "title": "Você ainda está com dúvidas?",
+            "content": "<p>Fique à vontade para entrar em contato conosco por meio da nossa página de contato! Estamos aqui e felizes em ajudar com qualquer dúvida que você possa ter.<br/><br/></p>"
           }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "166442457738b23caf-2",
+        "item_yMJwRQ",
+        "item_t7JfNc",
+        "item_gXEVyL"
       ],
       "settings": {
         "full_width": false,
         "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "title": "Perguntas Frequentes",
+        "content": "",
         "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "support_hours": "Nosso suporte está disponível durante todos os dias da semana.",
+        "answer_time": "Tempo médio de resposta: 24 Horas",
         "button_text": "",
         "button_url": "",
         "text_position": "start",

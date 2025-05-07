@@ -86,6 +86,13 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "inventory_WKn7Vz": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "low_inventory_threshold": 100
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -112,6 +119,7 @@
         "collapsible_text_EgJPtF",
         "variant_picker",
         "quantity_selector",
+        "inventory_WKn7Vz",
         "buy_buttons"
       ],
       "settings": {
