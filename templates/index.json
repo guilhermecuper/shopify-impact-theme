@@ -941,6 +941,19 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "item_Qz8hc8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/A27c81faf371c4d9591ccac451f93981dk_jpg.png",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
@@ -948,7 +961,8 @@
         "1664424046b00c932c-1",
         "1664424046b00c932c-2",
         "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac"
+        "e4a0ef18-1856-4ddd-83d8-871a60d7acac",
+        "item_Qz8hc8"
       ],
       "settings": {
         "full_width": false,
