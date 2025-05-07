@@ -137,6 +137,7 @@
       "blocks": {
         "image_tJiXkE": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/0505_1.gif",
             "media_width": 50,
