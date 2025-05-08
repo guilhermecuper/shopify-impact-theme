@@ -172,6 +172,7 @@
       "block_order": [
         "image_tJiXkE"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -321,7 +322,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "video": "shopify://files/videos/tiktokio.com_7sqTDAAZBeyKmREAoGX9.mp4",
+        "video": "https://www.youtube.com/watch?v=EZz0E7FyplY",
+        "mobile_video": "",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
