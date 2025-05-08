@@ -40,8 +40,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
+            "subheading": "",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -49,7 +49,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 16,
             "background": "",
             "background_gradient": ""
           }
@@ -236,7 +236,6 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/Design_sem_nome_8.png",
-        "mobile_image": "shopify://shop_images/Design_sem_nome_8.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -353,7 +352,7 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "Before/after",
+        "title": "",
         "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
         "before_image": "shopify://shop_images/s-l960.webp",
         "after_image": "shopify://shop_images/enhanced_s-l960_1_f20dde05-93a0-4c3d-9f1b-7b621455f859.png",
