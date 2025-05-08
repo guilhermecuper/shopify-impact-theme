@@ -200,12 +200,6 @@
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
         "1664424230c4756b0e-1": {
           "type": "heading",
           "settings": {
@@ -218,12 +212,23 @@
           "settings": {
             "content": "<p><strong>A nova coleção mais elétrica do momento já está no nosso site! Os </strong><em><strong>Labubu Big Into Energy </strong></em><strong>acabaram de aterrissar e prometem virar seu novo vício colecionável. Corre garantir o seu antes que acabe!<br/></strong><br/></p>"
           }
+        },
+        "button_PgDLaR": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "size": "base",
+            "text": "Peça Agora",
+            "url": "shopify://products/high-quality-replica-labubu-blind-box-labubu-keychain-backpack-decoration-kawaii-kids-toys-surprise-christmas-gift-mystery-box-2",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#1a1a1a"
+          }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
         "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "1664424230c4756b0e-2",
+        "button_PgDLaR"
       ],
       "settings": {
         "full_width": true,
