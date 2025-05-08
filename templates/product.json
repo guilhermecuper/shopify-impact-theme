@@ -205,6 +205,7 @@
         "video_block_z89L4M": {
           "type": "video_block",
           "settings": {
+            "video": "shopify://files/videos/tiktokio.com_7sqTDAAZBeyKmREAoGX9.mp4",
             "external_video_url": "https://youtu.be/ryDOy3AosBw?si=BF9p_IWdTI78d9qW",
             "autoplay": true,
             "media_position": "start",
