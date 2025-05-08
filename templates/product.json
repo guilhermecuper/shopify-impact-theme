@@ -180,60 +180,9 @@
     },
     "media_with_video_ycAQXW": {
       "type": "media-with-video",
-      "blocks": {
-        "video_block_aCwe4q": {
-          "type": "video_block",
-          "settings": {
-            "external_video_url": "",
-            "autoplay": false,
-            "media_position": "start",
-            "media_width": 50,
-            "text_position": "left",
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "icon": "none",
-            "icon_width": 40,
-            "text_color": "#000000",
-            "text_gradient": "",
-            "link_url": "",
-            "link_text": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "video_block_z89L4M": {
-          "type": "video_block",
-          "settings": {
-            "video": "shopify://files/videos/tiktokio.com_7sqTDAAZBeyKmREAoGX9.mp4",
-            "external_video_url": "https://youtu.be/ryDOy3AosBw?si=BF9p_IWdTI78d9qW",
-            "autoplay": true,
-            "media_position": "start",
-            "media_width": 50,
-            "text_position": "left",
-            "subheading": "",
-            "title": "✨ O boneco que virou tendência entre os que sabem o que é estilo.✨",
-            "content": "✨ O boneco que virou tendência entre os que sabem o que é estilo.✨✨ O boneco que virou tendência entre os que sabem o que é estilo.✨✨ O boneco que virou tendência entre os que sabem o que é estilo.✨",
-            "icon": "none",
-            "icon_width": 33,
-            "text_color": "#000000",
-            "text_gradient": "",
-            "link_url": "",
-            "link_text": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "video_block_aCwe4q",
-        "video_block_z89L4M"
-      ],
+      "disabled": true,
       "name": "Vídeo com Texto",
-      "settings": {
-        "full_width": false,
-        "spacing": "pt-12 pb-12"
-      }
+      "settings": {}
     },
     "image_with_text_overlay_NPEHCw": {
       "type": "image-with-text-overlay",
