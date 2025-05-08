@@ -1,293 +1,242 @@
-{%- render 'section-spacing-collapsing' -%}
+{% comment %}
+  Section: Video with Text
+  Description: Apresenta um bloco de vídeo (interno ou externo) ao lado de conteúdo textual.
+{% endcomment %}
 
-<style>
-  #shopify-section-{{ section.id }} {
-    --media-with-text-gap: {% if section.settings.spacing == 'none' %}0{% else %}var(--grid-gutter){% endif %};
-    --media-with-text-item-grid-template: "media" "content" / auto;
-  }
+<section
+  class="section {{ section.settings.spacing }} {% if section.settings.full_width %}full-width{% endif %}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="container">
+    {% for block in section.blocks %}
+      {% assign video = block.settings.video %}
+      {% assign external_video_url = block.settings.external_video_url %}
+      {% assign poster = block.settings.poster_image %}
+      {% assign autoplay = block.settings.autoplay %}
+      {% assign media_position = block.settings.media_position %}
+      {% assign media_width = block.settings.media_width | append: '%' %}
+      {% assign text_alignment = block.settings.text_position %}
 
-  @media screen and (min-width: 1000px) {
-    #shopify-section-{{ section.id }} {
-      --media-with-text-gap: {% case section.settings.spacing %}
-        {% when 'none' %}0
-        {% when 'small' %}var(--spacing-6)
-        {% when 'medium' %}var(--spacing-12)
-        {% else %}var(--spacing-18)
-      {% endcase %};
-    }
-  }
-
-  {%- for block in section.blocks -%}
-    {%- assign media_ratio = block.settings.media_width | divided_by: 50.0 -%}
-    {%- assign content_ratio = 2.0 | minus: media_ratio -%}
-    #block-{{ section.id }}-{{ block.id }} {
-      --media-with-text-item-icon-width: {{ block.settings.icon_width }}px;
-    }
-
-    @media screen and (min-width: 1000px) {
-      #block-{{ section.id }}-{{ block.id }} {
-        --media-with-text-item-grid-template: {% if block.settings.media_position == 'start' %}"media content" / minmax(0, {{ media_ratio }}fr) minmax(0, {{ content_ratio }}fr){% else %}"content media" / minmax(0, {{ content_ratio }}fr) minmax(0, {{ media_ratio }}fr){% endif %};
-      }
-    }
-  {%- endfor -%}
-</style>
-
-<div {% render 'section-properties' %}>
-  <media-with-text class="media-with-text {% if section.settings.spacing == 'none' %}{% if section.settings.full_width %}full-bleed{% else %}rounded{% endif %}{% endif %}">
-    {%- for block in section.blocks -%}
-      <div id="block-{{ section.id }}-{{ block.id }}" class="media-with-text__item" {{ block.shopify_attributes }}>
-        <div class="media-with-text__media {% unless section.settings.spacing == 'none' %}rounded{% endunless %}" reveal-on-scroll="true">
-
-          {%- capture poster -%}
-            {%- assign poster_image = block.settings.poster_image | default: block.settings.video.preview_image -%}
-            {%- if poster_image -%}
-              {{- poster_image | image_url: width: poster_image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 400px, 800px', widths: '300,400,500,800,1200', class: 'rounded' -}}
-            {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'rounded' }}
-            {%- endif -%}
-          {%- endcapture -%}
-
-          {%- if block.settings.video -%}
-            <video-media {% if block.settings.autoplay %}autoplay{% else %}show-play-button{% endif %}>
-              {%- unless block.settings.autoplay -%}
-                {{- poster -}}
-              {%- endunless -%}
-              {{- block.settings.video | video_tag: playsinline: true, controls: true, muted: block.settings.autoplay, loop: block.settings.autoplay, preload: 'metadata' -}}
-            </video-media>
-          {%- elsif block.settings.external_video_url != blank -%}
-            <video-media host="{{ block.settings.external_video_url.type }}" {% if block.settings.autoplay %}autoplay{% else %}show-play-button{% endif %}>
-              {%- unless block.settings.autoplay -%}
-                {{- poster -}}
-              {%- endunless -%}
-              <template>
-                {%- if block.settings.external_video_url.type == 'youtube' -%}
-                  <iframe src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay={% if block.settings.autoplay %}1{% else %}0{% endif %}&controls=1&mute={% if block.settings.autoplay %}1{% else %}0{% endif %}&loop=1&playlist={{ block.settings.external_video_url.id }}" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                {%- elsif block.settings.external_video_url.type == 'vimeo' -%}
-                  <iframe src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autoplay={% if block.settings.autoplay %}1{% else %}0{% endif %}&loop=1&muted={% if block.settings.autoplay %}1{% else %}0{% endif %}&background=1" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
-                {%- endif -%}
-              </template>
-            </video-media>
-          {%- endif -%}
+      <div class="media-with-text-block flex flex-wrap items-center gap-6 my-12 {% if media_position == 'end' %}flex-row-reverse{% endif %}">
+        <div class="media w-full md:w-[{{ media_width }}]">
+          {% if video != blank %}
+            {{ video | video_tag: autoplay: autoplay, controls: true, loop: true, muted: autoplay, playsinline: true, poster: poster }}
+          {% elsif external_video_url != blank %}
+            <div class="aspect-video w-full">
+              <iframe
+                class="w-full h-full"
+                src="{{ external_video_url | replace: 'watch?v=', 'embed/' }}"
+                frameborder="0"
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </div>
+          {% endif %}
         </div>
 
-        <div {% render 'surface', class: 'media-with-text__content', background: block.settings.background, background_gradient: block.settings.background_gradient, text_color: block.settings.text_color %}>
-          <div class="prose break-all {{ block.settings.text_position }}" reveal-on-scroll="true">
-            {%- if block.settings.subheading != blank -%}
-              <p class="bold">{{ block.settings.subheading | escape }}</p>
-            {%- endif -%}
+        <div class="text-content w-full md:w-[calc(100%-{{ media_width }})] text-{{ text_alignment }}">
+          {% if block.settings.custom_icon != blank %}
+            <img src="{{ block.settings.custom_icon | image_url: width: block.settings.icon_width }}" alt="Ícone" width="{{ block.settings.icon_width }}" class="mb-2">
+          {% elsif block.settings.icon != 'none' %}
+            <span class="icon icon-{{ block.settings.icon }} mb-2" style="width: {{ block.settings.icon_width }}px;"></span>
+          {% endif %}
 
-            {%- if block.settings.title != blank -%}
-              <p class="h2">
-                {%- render 'styled-text', content: block.settings.title, gradient: block.settings.text_gradient -%}
-              </p>
-            {%- endif -%}
+          {% if block.settings.subheading != blank %}
+            <p class="subheading text-sm text-gray-500">{{ block.settings.subheading }}</p>
+          {% endif %}
 
-            {{- block.settings.content -}}
+          {% if block.settings.title != blank %}
+            <h2 class="title text-2xl font-bold mt-1" {% if block.settings.text_gradient != blank %}style="background: {{ block.settings.text_gradient }}; -webkit-background-clip: text; color: transparent;"{% endif %}>{{ block.settings.title }}</h2>
+          {% endif %}
 
-            {%- if block.settings.link_text != blank -%}
-              {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, size: 'xl', background: block.settings.button_background, text_color: block.settings.button_text_color -%}
-            {%- endif -%}
-          </div>
+          {% if block.settings.content != blank %}
+            <div class="content text-base mt-2" style="color: {{ block.settings.text_color }};">
+              {{ block.settings.content }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+            <a href="{{ block.settings.link_url }}" class="btn mt-4 inline-block px-5 py-2 rounded text-{{ block.settings.button_text_color }} bg-{{ block.settings.button_background }}">
+              {{ block.settings.link_text }}
+            </a>
+          {% endif %}
         </div>
       </div>
-    {%- endfor -%}
-  </media-with-text>
-</div>
+    {% endfor %}
+  </div>
+</section>
 
-{% schema %}  
+{% schema %}
 {
-  "name": "Video with text",
-  "class": "shopify-section--video-with-text",
-  "tag": "section",
-  "disabled_on": {
-    "templates": ["password"],
-    "groups": ["header", "custom.overlay"]
-  },
+  "name": "Vídeo com Texto",
   "settings": [
     {
       "type": "checkbox",
       "id": "full_width",
-      "label": "Full width",
-      "info": "Only has effect when spacing is set to none.",
+      "label": "Largura total",
       "default": false
     },
     {
       "type": "select",
       "id": "spacing",
-      "label": "Spacing",
+      "label": "Espaçamento da seção",
+      "default": "pt-12 pb-12",
       "options": [
-        { "value": "none", "label": "None" },
-        { "value": "small", "label": "Small" },
-        { "value": "medium", "label": "Medium" },
-        { "value": "large", "label": "Large" }
-      ],
-      "default": "medium"
+        { "value": "pt-8 pb-8", "label": "Pequeno" },
+        { "value": "pt-12 pb-12", "label": "Médio" },
+        { "value": "pt-16 pb-16", "label": "Grande" }
+      ]
     }
   ],
   "blocks": [
     {
-      "type": "video",
-      "name": "Video with text block",
+      "type": "video_block",
+      "name": "Bloco de Vídeo",
       "settings": [
-        {
-          "type": "range",
-          "id": "media_width",
-          "min": 30,
-          "max": 70,
-          "step": 5,
-          "unit": "%",
-          "label": "Video width",
-          "default": 50
-        },
-        {
-          "type": "select",
-          "id": "media_position",
-          "label": "Video position (desktop)",
-          "options": [
-            { "value": "start", "label": "Start" },
-            { "value": "end", "label": "End" }
-          ],
-          "default": "start"
-        },
         {
           "type": "video",
           "id": "video",
-          "label": "Video file"
+          "label": "Vídeo interno"
         },
         {
-          "type": "video_url",
+          "type": "url",
           "id": "external_video_url",
-          "label": "External video (YouTube/Vimeo)",
-          "accept": ["youtube", "vimeo"]
+          "label": "URL do vídeo externo (YouTube, Vimeo etc.)"
         },
         {
           "type": "image_picker",
           "id": "poster_image",
-          "label": "Poster image"
+          "label": "Imagem de capa do vídeo (poster)"
         },
         {
           "type": "checkbox",
           "id": "autoplay",
-          "label": "Autoplay",
-          "default": true
+          "label": "Reproduzir automaticamente",
+          "default": false
         },
         {
-          "type": "text",
-          "id": "subheading",
-          "label": "Subheading"
+          "type": "select",
+          "id": "media_position",
+          "label": "Posição do vídeo",
+          "default": "start",
+          "options": [
+            { "value": "start", "label": "Esquerda" },
+            { "value": "end", "label": "Direita" }
+          ]
         },
         {
-          "type": "inline_richtext",
-          "id": "title",
-          "label": "Title",
-          "default": "Your video title"
-        },
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Text"
-        },
-        {
-          "type": "text",
-          "id": "link_text",
-          "label": "Button label"
-        },
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Button link"
+          "type": "range",
+          "id": "media_width",
+          "label": "Largura do vídeo (%)",
+          "min": 30,
+          "max": 70,
+          "step": 5,
+          "default": 50
         },
         {
           "type": "select",
           "id": "text_position",
-          "label": "Text alignment",
+          "label": "Alinhamento do texto",
+          "default": "left",
           "options": [
-            { "value": "text-start", "label": "Left" },
-            { "value": "text-center", "label": "Center" },
-            { "value": "text-end", "label": "Right" }
-          ],
-          "default": "text-start"
+            { "value": "left", "label": "Esquerda" },
+            { "value": "center", "label": "Centralizado" },
+            { "value": "right", "label": "Direita" }
+          ]
         },
         {
-          "type": "color_background",
-          "id": "background",
-          "label": "Background"
+          "type": "text",
+          "id": "subheading",
+          "label": "Subtítulo"
         },
         {
-          "type": "color_background",
-          "id": "background_gradient",
-          "label": "Background gradient"
+          "type": "text",
+          "id": "title",
+          "label": "Título"
         },
         {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text color"
-        },
-        {
-          "type": "image_picker",
-          "id": "custom_icon",
-          "label": "Custom icon"
+          "type": "textarea",
+          "id": "content",
+          "label": "Texto descritivo"
         },
         {
           "type": "select",
           "id": "icon",
-          "label": "Icon (if no image)",
+          "label": "Ícone padrão",
+          "default": "none",
           "options": [
-            { "value": "none", "label": "None" },
-            { "value": "play", "label": "Play" },
-            { "value": "video", "label": "Video" },
-            { "value": "star", "label": "Star" }
-          ],
-          "default": "none"
+            { "value": "none", "label": "Nenhum" },
+            { "value": "star", "label": "Estrela" },
+            { "value": "check", "label": "Check" },
+            { "value": "heart", "label": "Coração" }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Ícone personalizado"
         },
         {
           "type": "range",
           "id": "icon_width",
-          "min": 12,
+          "label": "Largura do ícone (px)",
+          "min": 10,
           "max": 100,
-          "step": 4,
-          "unit": "px",
-          "label": "Icon width",
-          "default": 36
-        },
-        {
-          "type": "select",
-          "id": "button_background",
-          "label": "Button background",
-          "options": [
-            { "value": "primary", "label": "Primary" },
-            { "value": "secondary", "label": "Secondary" },
-            { "value": "tertiary", "label": "Tertiary" }
-          ],
-          "default": "primary"
-        },
-        {
-          "type": "select",
-          "id": "button_text_color",
-          "label": "Button text color",
-          "options": [
-            { "value": "white", "label": "White" },
-            { "value": "black", "label": "Black" }
-          ],
-          "default": "white"
+          "step": 1,
+          "default": 40
         },
         {
           "type": "color",
+          "id": "text_color",
+          "label": "Cor do texto",
+          "default": "#000000"
+        },
+        {
+          "type": "color_background",
           "id": "text_gradient",
-          "label": "Text gradient"
+          "label": "Gradiente no título"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link do botão"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Texto do botão"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Cor de fundo do botão",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Cor do texto do botão",
+          "default": "#ffffff"
         }
       ]
     }
   ],
-  "max_blocks": 10,
   "presets": [
     {
-      "name": "Video with text",
+      "name": "Vídeo com Texto",
       "blocks": [
-        { "type": "video" },
-        { "type": "video" }
+        {
+          "type": "video_block"
+        }
       ]
     }
   ]
 }
-  {% endschema %}
+{% endschema %}
+
+{% stylesheet %}
+  .media-with-text-block .icon {
+    display: inline-block;
+    height: auto;
+  }
+{% endstylesheet %}
