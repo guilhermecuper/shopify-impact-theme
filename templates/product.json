@@ -178,6 +178,62 @@
         "spacing": "small"
       }
     },
+    "media_with_video_ycAQXW": {
+      "type": "media-with-video",
+      "blocks": {
+        "video_block_aCwe4q": {
+          "type": "video_block",
+          "settings": {
+            "external_video_url": "",
+            "autoplay": false,
+            "media_position": "start",
+            "media_width": 50,
+            "text_position": "left",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "icon": "none",
+            "icon_width": 40,
+            "text_color": "#000000",
+            "text_gradient": "",
+            "link_url": "",
+            "link_text": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "video_block_z89L4M": {
+          "type": "video_block",
+          "settings": {
+            "external_video_url": "https://youtu.be/ryDOy3AosBw?si=BF9p_IWdTI78d9qW",
+            "autoplay": true,
+            "media_position": "start",
+            "media_width": 50,
+            "text_position": "left",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "icon": "none",
+            "icon_width": 40,
+            "text_color": "#000000",
+            "text_gradient": "",
+            "link_url": "",
+            "link_text": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_aCwe4q",
+        "video_block_z89L4M"
+      ],
+      "name": "Vídeo com Texto",
+      "settings": {
+        "full_width": false,
+        "spacing": "pt-12 pb-12"
+      }
+    },
     "image_with_text_overlay_NPEHCw": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -399,6 +455,7 @@
   "order": [
     "main",
     "media_with_text_HCfKi7",
+    "media_with_video_ycAQXW",
     "image_with_text_overlay_NPEHCw",
     "multi_column_fAWN9X",
     "1746669539fc656420",
