@@ -178,6 +178,78 @@
         "spacing": "small"
       }
     },
+    "video_UUDLEE": {
+      "type": "video",
+      "blocks": {
+        "play_UbgTJe": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_kwUeXU": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_UbgTJe",
+        "heading_kwUeXU"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": true,
+        "video_size": "auto",
+        "video": "shopify://files/videos/tiktokio.com_7sqTDAAZBeyKmREAoGX9.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 26
+      }
+    },
+    "rich_text_ENtxHx": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_cwTAwA": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_ryUtbt": {
+          "type": "heading",
+          "settings": {
+            "text": "✨ O boneco que virou tendência entre os que sabem o que é estilo.✨",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wyRyYK": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>De celebridades a criadores de conteúdo, o <strong>Labubu</strong> já conquistou quem dita as tendências — e agora é a sua vez.</p><p>Muito mais que um colecionável, ele é <strong>expressão, atitude e charme em forma de boneco</strong>.<br/><br/>Você já viu ele em bolsas, estantes, vídeos virais… e se ainda não tem o seu, <strong>tá na hora de entrar nesse universo</strong>.</p><p>Seja o Labubu clássico ou aquele que traduz sua personalidade, uma coisa é certa:<br/><br/><strong>ele é o toque que faltava no seu lifestyle</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_cwTAwA",
+        "heading_ryUtbt",
+        "richtext_wyRyYK"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#000000",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
     "media_with_video_ycAQXW": {
       "type": "media-with-video",
       "disabled": true,
@@ -405,6 +477,8 @@
   "order": [
     "main",
     "media_with_text_HCfKi7",
+    "video_UUDLEE",
+    "rich_text_ENtxHx",
     "media_with_video_ycAQXW",
     "image_with_text_overlay_NPEHCw",
     "multi_column_fAWN9X",
