@@ -96,6 +96,10 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "judge_me_reviews_preview_badge_UfRjim": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -112,7 +116,8 @@
         "collapsible_text_EgJPtF",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "judge_me_reviews_preview_badge_UfRjim"
       ],
       "settings": {
         "full_width": true,
@@ -269,6 +274,31 @@
         "text_color": ""
       }
     },
+    "1746669539fc656420": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_p9Xjai": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_p9Xjai"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "tabs_9ttK6c": {
       "type": "tabs",
       "blocks": {
@@ -357,31 +387,6 @@
         "heading_gradient": "",
         "product_card_background": "#faf6f2",
         "product_card_text_color": ""
-      }
-    },
-    "1746669539fc656420": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_p9Xjai": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_p9Xjai"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
       }
     }
   },
