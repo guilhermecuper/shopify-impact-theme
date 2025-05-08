@@ -195,7 +195,7 @@
             "button_text_color": "foreground",
             "media_position": "start",
             "media_width": 50,
-            "text_position": "center",
+            "text_position": "left",
             "background": "",
             "background_gradient": "",
             "text_color": "#2d2d2d",
