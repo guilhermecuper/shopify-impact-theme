@@ -172,7 +172,6 @@
       "block_order": [
         "image_tJiXkE"
       ],
-      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -210,6 +209,7 @@
       "block_order": [
         "video_block_GDfcLh"
       ],
+      "disabled": true,
       "name": "Vídeo com Texto",
       "settings": {
         "spacing": "small",
