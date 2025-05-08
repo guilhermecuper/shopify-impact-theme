@@ -1,11 +1,5 @@
 {%- render 'section-spacing-collapsing' -%}
 
-{%- comment -%}
-------------------------------------------------------------------------------------------------------------------------
-CSS
-------------------------------------------------------------------------------------------------------------------------
-{%- endcomment -%}
-
 <style>
   #shopify-section-{{ section.id }} {
     --media-with-text-gap: {% if section.settings.spacing == 'none' %}0{% else %}var(--grid-gutter){% endif %};
@@ -33,12 +27,6 @@ CSS
     }
   {%- endfor -%}
 </style>
-
-{%- comment -%}
-------------------------------------------------------------------------------------------------------------------------
-LIQUID
-------------------------------------------------------------------------------------------------------------------------
-{%- endcomment -%}
 
 <div {% render 'section-properties' %}>
   <media-with-text class="media-with-text {% if section.settings.spacing == 'none' %}{% if section.settings.full_width %}full-bleed{% else %}rounded{% endif %}{% endif %}">
@@ -115,3 +103,66 @@ LIQUID
     {%- endfor -%}
   </media-with-text>
 </div>
+
+{% schema %}
+{
+  "name": "Seção de Vídeo",
+  "settings": [
+    {
+      "type": "select",
+      "id": "spacing",
+      "label": "Espaçamento",
+      "default": "medium",
+      "options": [
+        { "value": "none", "label": "Nenhum" },
+        { "value": "small", "label": "Pequeno" },
+        { "value": "medium", "label": "Médio" },
+        { "value": "large", "label": "Grande" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Largura total",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_block",
+      "name": "Bloco de Vídeo",
+      "settings": [
+        { "type": "video", "id": "video", "label": "Vídeo Shopify" },
+        { "type": "video_url", "id": "external_video_url", "label": "Vídeo externo (YouTube ou Vimeo)", "accept": ["youtube", "vimeo"] },
+        { "type": "image_picker", "id": "poster_image", "label": "Imagem de capa (poster)" },
+        { "type": "checkbox", "id": "autoplay", "label": "Reprodução automática", "default": false },
+        { "type": "text", "id": "subheading", "label": "Subtítulo" },
+        { "type": "text", "id": "title", "label": "Título" },
+        { "type": "richtext", "id": "content", "label": "Conteúdo" },
+        { "type": "url", "id": "link_url", "label": "Link do botão" },
+        { "type": "text", "id": "link_text", "label": "Texto do botão" },
+        { "type": "select", "id": "button_background", "label": "Cor do botão", "default": "primary", "options": [ { "value": "primary", "label": "Primário" }, { "value": "secondary", "label": "Secundário" } ] },
+        { "type": "select", "id": "button_text_color", "label": "Cor do texto do botão", "default": "foreground", "options": [ { "value": "foreground", "label": "Padrão" }, { "value": "inverse", "label": "Inverso" } ] },
+        { "type": "select", "id": "media_position", "label": "Posição do vídeo", "default": "start", "options": [ { "value": "start", "label": "Esquerda" }, { "value": "end", "label": "Direita" } ] },
+        { "type": "range", "id": "media_width", "label": "Largura do vídeo", "min": 20, "max": 80, "step": 5, "unit": "%", "default": 50 },
+        { "type": "text", "id": "text_position", "label": "Classe de posição do texto", "default": "left" },
+        { "type": "color_background", "id": "background", "label": "Fundo" },
+        { "type": "color_background", "id": "background_gradient", "label": "Gradiente de fundo" },
+        { "type": "color", "id": "text_color", "label": "Cor do texto" },
+        { "type": "select", "id": "icon", "label": "Ícone", "default": "none", "options": [ { "value": "none", "label": "Nenhum" }, { "value": "star", "label": "Estrela" } ] },
+        { "type": "image_picker", "id": "custom_icon", "label": "Ícone personalizado" },
+        { "type": "range", "id": "icon_width", "label": "Largura do ícone", "min": 20, "max": 100, "step": 5, "default": 50 },
+        { "type": "color", "id": "text_gradient", "label": "Gradiente do título" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vídeo com Texto",
+      "blocks": [
+        { "type": "video_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}
