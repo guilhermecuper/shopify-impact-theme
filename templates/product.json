@@ -185,6 +185,7 @@
           "type": "video_block",
           "settings": {
             "video": "shopify://files/videos/tiktokio.com_7sqTDAAZBeyKmREAoGX9.mp4",
+            "external_video_url": "",
             "autoplay": true,
             "subheading": "",
             "title": "✨ O boneco que virou tendência entre os que sabem o que é estilo.✨",
@@ -196,9 +197,9 @@
             "media_position": "start",
             "media_width": 50,
             "text_position": "left",
-            "background": "",
+            "background": "#000000",
             "background_gradient": "",
-            "text_color": "#2d2d2d",
+            "text_color": "#ffffff",
             "icon": "none",
             "icon_width": 50,
             "text_gradient": ""
