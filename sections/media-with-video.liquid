@@ -93,3 +93,199 @@
     {%- endfor -%}
   </media-with-text>
 </div>
+
+{
+  "name": "Video with text",
+  "class": "shopify-section--video-with-text",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "info": "Only has effect when spacing is set to none.",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "spacing",
+      "label": "Spacing",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium" },
+        { "value": "large", "label": "Large" }
+      ],
+      "default": "medium"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video with text block",
+      "settings": [
+        {
+          "type": "range",
+          "id": "media_width",
+          "min": 30,
+          "max": 70,
+          "step": 5,
+          "unit": "%",
+          "label": "Video width",
+          "default": 50
+        },
+        {
+          "type": "select",
+          "id": "media_position",
+          "label": "Video position (desktop)",
+          "options": [
+            { "value": "start", "label": "Start" },
+            { "value": "end", "label": "End" }
+          ],
+          "default": "start"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video file"
+        },
+        {
+          "type": "video_url",
+          "id": "external_video_url",
+          "label": "External video (YouTube/Vimeo)",
+          "accept": ["youtube", "vimeo"]
+        },
+        {
+          "type": "image_picker",
+          "id": "poster_image",
+          "label": "Poster image"
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Autoplay",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "Your video title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "text_position",
+          "label": "Text alignment",
+          "options": [
+            { "value": "text-start", "label": "Left" },
+            { "value": "text-center", "label": "Center" },
+            { "value": "text-end", "label": "Right" }
+          ],
+          "default": "text-start"
+        },
+        {
+          "type": "color_background",
+          "id": "background",
+          "label": "Background"
+        },
+        {
+          "type": "color_background",
+          "id": "background_gradient",
+          "label": "Background gradient"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_icon",
+          "label": "Custom icon"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon (if no image)",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "play", "label": "Play" },
+            { "value": "video", "label": "Video" },
+            { "value": "star", "label": "Star" }
+          ],
+          "default": "none"
+        },
+        {
+          "type": "range",
+          "id": "icon_width",
+          "min": 12,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "Icon width",
+          "default": 36
+        },
+        {
+          "type": "select",
+          "id": "button_background",
+          "label": "Button background",
+          "options": [
+            { "value": "primary", "label": "Primary" },
+            { "value": "secondary", "label": "Secondary" },
+            { "value": "tertiary", "label": "Tertiary" }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "select",
+          "id": "button_text_color",
+          "label": "Button text color",
+          "options": [
+            { "value": "white", "label": "White" },
+            { "value": "black", "label": "Black" }
+          ],
+          "default": "white"
+        },
+        {
+          "type": "color_gradient",
+          "id": "text_gradient",
+          "label": "Text gradient"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Video with text",
+      "blocks": [
+        { "type": "video" },
+        { "type": "video" }
+      ]
+    }
+  ]
+}
