@@ -203,20 +203,20 @@
         "1664424230c4756b0e-0": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
+            "text": ""
           }
         },
         "1664424230c4756b0e-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "⚡ Chegaram os novos Labubu Big Into Energy!",
             "heading_tag": "h1"
           }
         },
         "1664424230c4756b0e-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p><strong>A nova coleção mais elétrica do momento já está no nosso site! Os </strong><em><strong>Labubu Big Into Energy </strong></em><strong>acabaram de aterrissar e prometem virar seu novo vício colecionável. Corre garantir o seu antes que acabe!<br/></strong><br/></p>"
           }
         }
       },
@@ -230,13 +230,12 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "video": "",
-        "mobile_video": "",
+        "image": "shopify://shop_images/enhanced_Big-Into-Energy-Full-Collection-e1745530328450_1.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "text_color": "#ffffff"
+        "overlay_opacity": 23
       }
     },
     "media-grid": {
