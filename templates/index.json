@@ -236,6 +236,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/Design_sem_nome_8.png",
+        "mobile_image": "shopify://shop_images/Design_sem_nome_8.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
