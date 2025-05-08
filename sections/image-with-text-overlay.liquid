@@ -20,23 +20,20 @@
   {%- capture class -%}content-over-media content-over-media--{{ section.settings.image_size }} {% if section.settings.full_width %}full-bleed{% else %}shadow-block rounded-lg{% endif %}{%- endcapture -%}
 
   <image-banner reveal-on-scroll="true" {% if section.settings.enable_parallax %}parallax="0.3"{% endif %} {% render 'surface', class: class, text_color: section.settings.text_color %}>
-    
-    <div class="relative w-full h-full">
-      {%- assign video_tag_attrs = 'autoplay muted loop playsinline' -%}
-      
-      {%- if section.settings.video != blank -%}
-        <video
-          class="w-full h-full object-cover absolute inset-0 {% if section.settings.mobile_video != blank %}hidden sm:block{% endif %}"
-          {{ video_tag_attrs }}
-        >
-          <source src="{{ section.settings.video | video_url }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      {%- endif -%}
+    {%- assign video_tag_attrs = 'autoplay muted loop playsinline' -%}
+
+    {%- if section.settings.video != blank -%}
+      <video
+        class="w-full h-full object-cover {% if section.settings.mobile_video != blank %}hidden sm:block{% endif %}"
+        {{ video_tag_attrs }}
+      >
+        <source src="{{ section.settings.video | video_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
       {%- if section.settings.mobile_video != blank -%}
         <video
-          class="w-full h-full object-cover absolute inset-0 sm:hidden"
+          class="w-full h-full object-cover sm:hidden"
           {{ video_tag_attrs }}
         >
           <source src="{{ section.settings.mobile_video | video_url }}" type="video/mp4">
@@ -44,8 +41,9 @@
         </video>
       {%- endif -%}
 
-      <div class="absolute inset-0 z-10" style="background-color: rgba({{ section.settings.overlay_color.red }}, {{ section.settings.overlay_color.green }}, {{ section.settings.overlay_color.blue }}, {{ section.settings.overlay_opacity | divided_by: 100.0 }})"></div>
-    </div>
+    {%- else -%}
+      {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' }}
+    {%- endif -%}
 
     {%- if section.blocks.size > 0 -%}
       <div class="{{ section.settings.mobile_text_position }} {{ section.settings.desktop_text_position }}">
@@ -90,11 +88,10 @@
   </image-banner>
 </div>
 
-
 {% schema %}
 {
-  "name": "Image with text overlay",
-  "class": "shopify-section--image-with-text-overlay",
+  "name": "Video with text overlay",
+  "class": "shopify-section--video-with-text-overlay",
   "tag": "section",
   "disabled_on": {
     "templates": ["password"],
@@ -125,83 +122,42 @@
     {
       "type": "select",
       "id": "image_size",
-      "label": "Image size",
+      "label": "Video size",
       "options": [
-        {
-          "value": "auto",
-          "label": "Original image ratio"
-        },
-        {
-          "value": "sm",
-          "label": "Small"
-        },
-        {
-          "value": "md",
-          "label": "Medium"
-        },
-        {
-          "value": "lg",
-          "label": "Large"
-        },
-        {
-          "value": "fill",
-          "label": "Fill screen"
-        }
+        { "value": "auto", "label": "Original ratio" },
+        { "value": "sm", "label": "Small" },
+        { "value": "md", "label": "Medium" },
+        { "value": "lg", "label": "Large" },
+        { "value": "fill", "label": "Fill screen" }
       ],
-      "info": "Choose \"Original image ratio\" to avoid image cropping. [Learn more](https://help.shopify.com/en/manual/online-store/images/theme-images#best-practices-for-slideshows-and-full-widtw-images)",
       "default": "auto"
     },
     {
-  "type": "video",
-  "id": "video",
-  "label": "Video (desktop)"
-},
-{
-  "type": "video",
-  "id": "mobile_video",
-  "label": "Video (mobile)"
-},
+      "type": "video_url",
+      "id": "video",
+      "label": "Video (desktop)",
+      "accept": ["youtube", "vimeo"]
+    },
+    {
+      "type": "video_url",
+      "id": "mobile_video",
+      "label": "Video (mobile)",
+      "accept": ["youtube", "vimeo"]
+    },
     {
       "type": "select",
       "id": "mobile_text_position",
       "label": "Mobile content position",
       "options": [
-        {
-          "value": "place-self-start text-start",
-          "label": "Top left"
-        },
-        {
-          "value": "place-self-start-center text-center",
-          "label": "Top center"
-        },
-        {
-          "value": "place-self-start-end text-end",
-          "label": "Top right"
-        },
-        {
-          "value": "place-self-center-start text-start",
-          "label": "Middle left"
-        },
-        {
-          "value": "place-self-center text-center",
-          "label": "Middle center"
-        },
-        {
-          "value": "place-self-center-end text-end",
-          "label": "Middle right"
-        },
-        {
-          "value": "place-self-end-start text-start",
-          "label": "Bottom left"
-        },
-        {
-          "value": "place-self-end-center text-center",
-          "label": "Bottom center"
-        },
-        {
-          "value": "place-self-end text-end",
-          "label": "Bottom right"
-        }
+        { "value": "place-self-start text-start", "label": "Top left" },
+        { "value": "place-self-start-center text-center", "label": "Top center" },
+        { "value": "place-self-start-end text-end", "label": "Top right" },
+        { "value": "place-self-center-start text-start", "label": "Middle left" },
+        { "value": "place-self-center text-center", "label": "Middle center" },
+        { "value": "place-self-center-end text-end", "label": "Middle right" },
+        { "value": "place-self-end-start text-start", "label": "Bottom left" },
+        { "value": "place-self-end-center text-center", "label": "Bottom center" },
+        { "value": "place-self-end text-end", "label": "Bottom right" }
       ],
       "default": "place-self-center text-center"
     },
@@ -210,59 +166,22 @@
       "id": "desktop_text_position",
       "label": "Desktop content position",
       "options": [
-        {
-          "value": "sm:place-self-start sm:text-start",
-          "label": "Top left"
-        },
-        {
-          "value": "sm:place-self-start-center sm:text-center",
-          "label": "Top center"
-        },
-        {
-          "value": "sm:place-self-start-end sm:text-end",
-          "label": "Top right"
-        },
-        {
-          "value": "sm:place-self-center-start sm:text-start",
-          "label": "Middle left"
-        },
-        {
-          "value": "sm:place-self-center sm:text-center",
-          "label": "Middle center"
-        },
-        {
-          "value": "sm:place-self-center-end sm:text-end",
-          "label": "Middle right"
-        },
-        {
-          "value": "sm:place-self-end-start sm:text-start",
-          "label": "Bottom left"
-        },
-        {
-          "value": "sm:place-self-end-center sm:text-center",
-          "label": "Bottom center"
-        },
-        {
-          "value": "sm:place-self-end sm:text-end",
-          "label": "Bottom right"
-        }
+        { "value": "place-self-start text-start", "label": "Top left" },
+        { "value": "place-self-start-center text-center", "label": "Top center" },
+        { "value": "place-self-start-end text-end", "label": "Top right" },
+        { "value": "place-self-center-start text-start", "label": "Middle left" },
+        { "value": "place-self-center text-center", "label": "Middle center" },
+        { "value": "place-self-center-end text-end", "label": "Middle right" },
+        { "value": "place-self-end-start text-start", "label": "Bottom left" },
+        { "value": "place-self-end-center text-center", "label": "Bottom center" },
+        { "value": "place-self-end text-end", "label": "Bottom right" }
       ],
-      "default": "sm:place-self-center sm:text-center"
-    },
-    {
-      "type": "header",
-      "content": "Colors"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text",
-      "default": "#ffffff"
+      "default": "place-self-center text-center"
     },
     {
       "type": "color",
       "id": "overlay_color",
-      "label": "Overlay",
+      "label": "Overlay color",
       "default": "#000000"
     },
     {
@@ -273,182 +192,80 @@
       "max": 100,
       "step": 1,
       "unit": "%",
-      "default": 30
+      "default": 40
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Text color",
+      "options": [
+        { "value": "text-primary", "label": "Primary" },
+        { "value": "text-secondary", "label": "Secondary" },
+        { "value": "text-inverse", "label": "Inverse" }
+      ],
+      "default": "text-inverse"
     }
   ],
   "blocks": [
     {
-      "type": "subheading",
-      "name": "Subheading",
-      "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text",
-          "default": "Subheading"
-        }
-      ]
-    },
-    {
       "type": "heading",
       "name": "Heading",
       "settings": [
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text",
-          "default": "Heading"
-        },
-        {
-          "type": "select",
-          "id": "heading_tag",
-          "label": "Style",
-          "options": [
-            {
-              "value": "h0",
-              "label": "H0"
-            },
-            {
-              "value": "h1",
-              "label": "H1"
-            },
-            {
-              "value": "h2",
-              "label": "H2"
-            },
-            {
-              "value": "h3",
-              "label": "H3"
-            },
-            {
-              "value": "h4",
-              "label": "H4"
-            },
-            {
-              "value": "h5",
-              "label": "H5"
-            },
-            {
-              "value": "h6",
-              "label": "H6"
-            }
-          ],
-          "default": "h1"
-        }
+        { "type": "text", "id": "text", "label": "Heading", "default": "Your heading" },
+        { "type": "select", "id": "heading_tag", "label": "HTML tag", "options": [
+          { "value": "h1", "label": "H1" },
+          { "value": "h2", "label": "H2" },
+          { "value": "h3", "label": "H3" }
+        ], "default": "h1" }
       ]
     },
     {
-      "name": "Paragraph",
+      "type": "subheading",
+      "name": "Subheading",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Subheading", "default": "Subheading text" }
+      ]
+    },
+    {
       "type": "richtext",
+      "name": "Text",
       "settings": [
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        }
+        { "type": "richtext", "id": "content", "label": "Text content", "default": "<p>Your rich text here</p>" }
       ]
     },
     {
-      "name": "Liquid",
-      "type": "liquid",
-      "settings": [
-        {
-          "type": "liquid",
-          "id": "liquid",
-          "label": "Liquid",
-          "default": "<p>Use this text to output some custom Liquid code to include widget or dynamic code.</p>"
-        }
-      ]
-    },
-    {
-      "name": "Button",
       "type": "button",
+      "name": "Button",
       "settings": [
-        {
-          "type": "select",
-          "id": "style",
-          "label": "Style",
-          "options": [
-            {
-              "value": "outline",
-              "label": "Outline"
-            },
-            {
-              "value": "fill",
-              "label": "Fill"
-            }
-          ],
-          "default": "fill"
-        },
-        {
-          "type": "select",
-          "id": "size",
-          "label": "Size",
-          "options": [
-            {
-              "value": "sm",
-              "label": "Small"
-            },
-            {
-              "value": "base",
-              "label": "Medium"
-            },
-            {
-              "value": "lg",
-              "label": "Large"
-            },
-            {
-              "value": "xl",
-              "label": "X-Large"
-            }
-          ],
-          "default": "lg"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text",
-          "default": "Button text"
-        },
-        {
-          "type": "url",
-          "id": "url",
-          "label": "Link"
-        },
-        {
-          "type": "color",
-          "id": "background",
-          "label": "Background"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text"
-        }
+        { "type": "text", "id": "text", "label": "Button text" },
+        { "type": "url", "id": "url", "label": "Link" },
+        { "type": "select", "id": "size", "label": "Size", "options": [
+          { "value": "sm", "label": "Small" },
+          { "value": "md", "label": "Medium" },
+          { "value": "lg", "label": "Large" }
+        ], "default": "md" },
+        { "type": "select", "id": "style", "label": "Style", "options": [
+          { "value": "primary", "label": "Primary" },
+          { "value": "secondary", "label": "Secondary" }
+        ], "default": "primary" },
+        { "type": "color", "id": "background", "label": "Background color" },
+        { "type": "color", "id": "text_color", "label": "Text color" }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "Custom Liquid",
+      "settings": [
+        { "type": "liquid", "id": "liquid", "label": "Liquid code" }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Image with text overlay",
+      "name": "Video with text overlay",
       "blocks": [
-        {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        {
-          "type": "richtext"
-        }
+        { "type": "heading" },
+        { "type": "subheading" }
       ]
     }
   ]
