@@ -178,6 +178,42 @@
         "spacing": "small"
       }
     },
+    "media_with_video_hgexcw": {
+      "type": "media-with-video",
+      "blocks": {
+        "video_block_GDfcLh": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/tiktokio.com_7sqTDAAZBeyKmREAoGX9.mp4",
+            "autoplay": true,
+            "subheading": "",
+            "title": "✨ O boneco que virou tendência entre os que sabem o que é estilo.✨",
+            "content": "<p>De celebridades a criadores de conteúdo, o <strong>Labubu</strong> já conquistou quem dita as tendências — e agora é a sua vez.</p><p>Muito mais que um colecionável, ele é <strong>expressão, atitude e charme em forma de boneco</strong>.<br/><br/>Você já viu ele em bolsas, estantes, vídeos virais… e se ainda não tem o seu, <strong>tá na hora de entrar nesse universo</strong>.</p><p>Seja o Labubu clássico ou aquele que traduz sua personalidade, uma coisa é certa:<br/><br/><strong>ele é o toque que faltava no seu lifestyle</strong></p>",
+            "link_url": "",
+            "link_text": "",
+            "button_background": "primary",
+            "button_text_color": "foreground",
+            "media_position": "start",
+            "media_width": 50,
+            "text_position": "left",
+            "background": "radial-gradient(rgba(10, 234, 237, 1) 8%, rgba(250, 13, 253, 1) 84%)",
+            "background_gradient": "",
+            "text_color": "",
+            "icon": "none",
+            "icon_width": 50,
+            "text_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_block_GDfcLh"
+      ],
+      "name": "Vídeo com Texto",
+      "settings": {
+        "spacing": "medium",
+        "full_width": false
+      }
+    },
     "video_UUDLEE": {
       "type": "video",
       "blocks": {
@@ -249,12 +285,6 @@
         "background_gradient": "",
         "text_color": "#ffffff"
       }
-    },
-    "media_with_video_ycAQXW": {
-      "type": "media-with-video",
-      "disabled": true,
-      "name": "Vídeo com Texto",
-      "settings": {}
     },
     "image_with_text_overlay_NPEHCw": {
       "type": "image-with-text-overlay",
@@ -477,9 +507,9 @@
   "order": [
     "main",
     "media_with_text_HCfKi7",
+    "media_with_video_hgexcw",
     "video_UUDLEE",
     "rich_text_ENtxHx",
-    "media_with_video_ycAQXW",
     "image_with_text_overlay_NPEHCw",
     "multi_column_fAWN9X",
     "1746669539fc656420",
