@@ -210,7 +210,6 @@
       "block_order": [
         "video_block_GDfcLh"
       ],
-      "disabled": true,
       "name": "Vídeo com Texto",
       "settings": {
         "spacing": "small",
@@ -236,6 +235,7 @@
         "play_UbgTJe",
         "heading_kwUeXU"
       ],
+      "disabled": true,
       "name": "Video",
       "settings": {
         "full_width": true,
@@ -279,6 +279,7 @@
         "heading_ryUtbt",
         "richtext_wyRyYK"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": false,
