@@ -196,9 +196,9 @@
             "media_position": "start",
             "media_width": 50,
             "text_position": "left",
-            "background": "radial-gradient(rgba(10, 234, 237, 1) 8%, rgba(250, 13, 253, 1) 84%)",
+            "background": "",
             "background_gradient": "",
-            "text_color": "",
+            "text_color": "#2d2d2d",
             "icon": "none",
             "icon_width": 50,
             "text_gradient": ""
@@ -210,7 +210,7 @@
       ],
       "name": "Vídeo com Texto",
       "settings": {
-        "spacing": "medium",
+        "spacing": "small",
         "full_width": false
       }
     },
