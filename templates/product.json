@@ -88,7 +88,14 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
+        },
+        "text_68zTcP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Verificado</p>"
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -122,6 +129,7 @@
         "collapsible_text_EgJPtF",
         "variant_picker",
         "quantity_selector",
+        "text_68zTcP",
         "buy_buttons",
         "judge_me_reviews_review_widget_YQ6Urm"
       ],
@@ -157,7 +165,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "✨ O boneco que virou tendência entre os que sabem o que é estilo.✨",
-            "content": "<p>De celebridades a criadores de conteúdo, o <strong>Labubu</strong> já conquistou quem dita as tendências — e agora é a sua vez.</p><p>Muito mais que um colecionável, ele é <strong>expressão, atitude e charme em forma de boneco</strong>.<br/><br/>Você já viu ele em bolsas, estantes, vídeos virais… e se ainda não tem o seu, <strong>tá na hora de entrar nesse universo</strong>.</p><p>Seja o Labubu clássico ou aquele que traduz sua personalidade, uma coisa é certa:<br/><br/><strong>ele é o toque que faltava no seu lifestyle</strong></p>",
+            "content": "<h6>De celebridades a criadores de conteúdo, o <strong>Labubu</strong> já conquistou quem dita as tendências — e agora é a sua vez.</h6><h6>Muito mais que um colecionável, ele é <strong>expressão, atitude e charme em forma de boneco</strong>.<br/><br/>Você já viu ele em bolsas, estantes, vídeos virais… e se ainda não tem o seu, <strong>tá na hora de entrar nesse universo</strong>.</h6><h6>Seja o Labubu clássico ou aquele que traduz sua personalidade, uma coisa é certa:<br/><br/><strong>ele é o toque que faltava no seu lifestyle</strong></h6>",
             "link_text": "",
             "link_url": "",
             "background": "#000000",
@@ -309,7 +317,7 @@
         "richtext_JPJaMQ": {
           "type": "richtext",
           "settings": {
-            "content": "<p><br/><br/>Cada unidade vem em uma <strong>blind box surpresa</strong>, e parte da experiência é essa: <strong>abrir a embalagem e descobrir aleatoriamente</strong> qual personagem incrível você vai receber.</p><p>É <strong>colecionável, divertido e viciante</strong>, do tipo que conquista quem ama moda, design e tudo que é tendência nas redes.</p><p>Seja para presentear, decorar ou iniciar sua própria coleção, ter um Labubu é entrar para um universo que só cresce — e <strong>quem tem um, sempre quer mais.</strong></p>"
+            "content": "<h6>Cada unidade vem em uma <strong>blind box surpresa</strong>, e parte da experiência é essa: <strong>abrir a embalagem e descobrir aleatoriamente</strong> qual personagem incrível você vai receber.</h6><h6>É <strong>colecionável, divertido e viciante</strong>, do tipo que conquista quem ama moda, design e tudo que é tendência nas redes.</h6><h6>Seja para presentear, decorar ou iniciar sua própria coleção, ter um Labubu é entrar para um universo que só cresce — e <strong>quem tem um, sempre quer mais.</strong></h6>"
           }
         }
       },
