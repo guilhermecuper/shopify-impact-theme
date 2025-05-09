@@ -92,9 +92,9 @@
           "type": "newsletter",
           "settings": {
             "image_width": 150,
-            "heading_size": "h3",
-            "title": "",
-            "content": ""
+            "heading_size": "h5",
+            "title": "Novidades",
+            "content": "<p>Fique por dentro de todas as novidades e oferta em primeira mão</p>"
           }
         },
         "links": {
@@ -107,9 +107,9 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "Sobre",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
-            "enable_follow_on_shop": true
+            "title": "Central de Atendimento",
+            "content": "<p><strong>E-mail: contato@copyclub.com.br</strong></p><p><strong>Horário de Atendimento: </strong>Atendimento personalizado, <strong>24 Horas / 7 dias da semana.</strong></p>",
+            "enable_follow_on_shop": false
           }
         }
       },
