@@ -172,7 +172,7 @@
             </div>
           {%- endif -%}
 
-          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {{ powered_by_link }}</p>
+          <p class="footer__copyright text-sm text-subdued">© {{ 'now' | date: '%Y' }}, {{ shop.name }}. {%- comment -%} {{ powered_by_link }} {%- endcomment -%}</p>
         </div>
         <div class="custom-payment-icons" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 20px;">
             <img src="{{ 'visa1.svg' | asset_url }}" alt="Visa" style="height: 28px;">
