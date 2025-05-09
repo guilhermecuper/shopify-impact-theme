@@ -893,6 +893,13 @@
             "content": "<p>Para manter seus bonecos em perfeitas condições:<br/><br/>Evite expô-las à luz solar direta por longos períodos.<br/><br/>Limpe-as cuidadosamente com um pano seco para remover a poeira.<br/><br/>Guarde-as em um local seco para evitar a deterioração do material.</p>"
           }
         },
+        "item_DptpDQ": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
         "item_t7JfNc": {
           "type": "item",
           "settings": {
@@ -903,8 +910,8 @@
         "item_gXEVyL": {
           "type": "item",
           "settings": {
-            "title": "Você ainda está com dúvidas?",
-            "content": "<p>Fique à vontade para entrar em contato conosco por meio da nossa página de contato! Estamos aqui e felizes em ajudar com qualquer dúvida que você possa ter.<br/><br/></p>"
+            "title": "Ainda está com dúvidas?",
+            "content": "<p>Fique à vontade para entrar em contato conosco por meio da nossa <a href=\"/pages/contact\" title=\"Entrar em contato\">página de contato</a>! Estamos aqui e felizes em ajudar com qualquer dúvida que você possa ter.<br/><br/></p>"
           }
         }
       },
@@ -913,6 +920,7 @@
         "166442457738b23caf-1",
         "166442457738b23caf-2",
         "item_yMJwRQ",
+        "item_DptpDQ",
         "item_t7JfNc",
         "item_gXEVyL"
       ],
