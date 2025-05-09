@@ -425,6 +425,34 @@
         "review_button_text_color": "#ffffff"
       }
     },
+    "1746772380b32aac15": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_slider_kertPV": {
+          "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup-playlist-slider/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "",
+            "debugging_script": ""
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_slider_kertPV"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "tabs_9ttK6c": {
       "type": "tabs",
       "blocks": {
@@ -525,6 +553,7 @@
     "image_with_text_overlay_NPEHCw",
     "multi_column_fAWN9X",
     "1746669539fc656420",
+    "1746772380b32aac15",
     "tabs_9ttK6c",
     "related-products"
   ]
