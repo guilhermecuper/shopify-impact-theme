@@ -145,6 +145,12 @@
         {%- endif -%}
       </div>
 
+{%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            Gambiarra feita abaixo, o botão de ver o carrinho que está redirecionando para o checkout da yampi e não o botão de checkout original.
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+      
       <form action="{{ routes.cart_url }}" method="POST" class="buy-buttons {% if section.settings.show_checkout_button %}buy-buttons--compact{% endif %}">
         {%- assign checkout_label = 'cart.general.view_cart' | t -%}
 
