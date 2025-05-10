@@ -193,7 +193,7 @@
         checkoutButtons.each(function () {
             var t = $(this);
 
-            if (t.attr('onclick') == "window.location='https://cdn.yampi.me/shopify/checkout.css'") {
+            if (t.attr('onclick') == "window.location='https://seguro.cpyclub.com/'") {
                 t.attr('onclick', "window.location='/cart'");
             }
         });
@@ -297,7 +297,7 @@
 
     // Verifica se existem botões redirecionando para /a/checkout
     if (window.$ || window.jQuery) {
-        var oldLinks = $('a[href="/a/https://cdn.yampi.me/shopify/checkout.css"]').not('.yampi-btn-finalize').addClass('yampi-btn-finalize-single');
+        var oldLinks = $('a[href="/a/https://seguro.cpyclub.com/"]').not('.yampi-btn-finalize').addClass('yampi-btn-finalize-single');
 
         $('.yampi-btn-finalize-single').on('click', function (e) {
             e.preventDefault();
