@@ -145,9 +145,11 @@
         {%- endif -%}
       </div>
 
-      <div class="buy-buttons">
+      <form action="{{ routes.cart_url }}" method="POST" class="buy-buttons {% if section.settings.show_checkout_button %}buy-buttons--compact{% endif %}">
+        <div class="buy-buttons">
   <a href="https://seguro.cpyclub.com/" class="btn btn--full">Finalizar compra</a>
 </div>
+      </form>
     </div>
   {%- endif -%}
 </cart-drawer>
