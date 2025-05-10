@@ -405,12 +405,20 @@
     "1746669539fc656420": {
       "type": "apps",
       "blocks": {
+        "judge_me_reviews_featured_carousel_gV6nze": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {
+            "maxwidth": 1080
+          }
+        },
         "judge_me_reviews_review_widget_p9Xjai": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
+        "judge_me_reviews_featured_carousel_gV6nze",
         "judge_me_reviews_review_widget_p9Xjai"
       ],
       "settings": {
@@ -525,12 +533,12 @@
       "settings": {
         "recommendations_count": 6,
         "products": [
-          "labubu-themonster-caixa-misteriosa",
-          "labubu-big-into-energy-v3-caixa-misteriosa",
-          "labubu-haveaseat-caixa-misteriosa",
-          "roupas-de-luxo-labubu",
+          "high-quality-replica-labubu-blind-box-labubu-keychain-backpack-decoration-kawaii-kids-toys-surprise-christmas-gift-mystery-box",
+          "high-quality-replica-labubu-blind-box-labubu-keychain-backpack-decoration-kawaii-kids-toys-surprise-christmas-gift-mystery-box-2",
+          "high-quality-replica-labubu-blind-box-labubu-keychain-backpack-decoration-kawaii-kids-toys-surprise-christmas-gift-mystery-box-1",
+          "labubu-corduroy-mini-doll-clothing-set-toys-cute-hats-clothes-shoes-vinyl-doll-accessories-training-sitting-party-games-toys",
           "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-1",
-          "vestido-de-noiva-labubu"
+          "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-4"
         ],
         "full_width": true,
         "stack_products": true,
