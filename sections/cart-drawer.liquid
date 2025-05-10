@@ -145,10 +145,19 @@
         {%- endif -%}
       </div>
 
-      <a href="https://seguro.cpyclub.com/" class="button button--xl button--primary w-full">
-  <svg class="icon" width="20" height="20" fill="none" stroke="currentColor"><use xlink:href="#icon-picto-lock"></use></svg>
-  Checkout
-</a>
+      <form action="{{ routes.cart_url }}" method="POST" class="buy-buttons {% if section.settings.show_checkout_button %}buy-buttons--compact{% endif %}">
+        {%- assign checkout_label = 'cart.general.checkout' | t -%}
+
+        {%- if section.settings.show_view_cart_button or section.settings.show_checkout_button == false -%}
+          <a href="{{ routes.cart_url }}" class="button button--xl {% if section.settings.show_checkout_button %}button--secondary{% endif %}" data-no-instant>
+            {{- 'cart.general.view_cart' | t -}}
+          </a>
+        {%- endif -%}
+
+        {%- if section.settings.show_checkout_button -%}
+          {%- render 'button', type: 'submit', content: checkout_label, icon: 'picto-lock', name: 'checkout', size: 'xl' -%}
+        {%- endif -%}
+      </form>
     </div>
   {%- endif -%}
 </cart-drawer>
