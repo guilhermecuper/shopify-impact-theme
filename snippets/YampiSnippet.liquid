@@ -136,7 +136,7 @@
 
                         // Tratamento com links dentro do carrinho.
                         if (window.$ || window.jQuery) {
-                            var btns = $('a.btn-checkout[href="https://seguro.cpyclub.com/cart"]').not('.ymp_elem_mainBtn');
+                            var btns = $('a.btn-checkout[href="/checkout"]').not('.ymp_elem_mainBtn');
                             btns.hide();
                         }
                     }
@@ -193,7 +193,7 @@
         checkoutButtons.each(function () {
             var t = $(this);
 
-            if (t.attr('onclick') == "window.location='https://seguro.cpyclub.com/cart'") {
+            if (t.attr('onclick') == "window.location='/checkout'") {
                 t.attr('onclick', "window.location='/cart'");
             }
         });
