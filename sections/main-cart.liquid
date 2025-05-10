@@ -82,96 +82,10 @@
           </div>
 
           <safe-sticky class="cart-order__recap v-stack gap-6">
-            <form action="{{ routes.cart_url }}" method="POST" class="cart-form rounded">
-              {%- for block in section.blocks -%}
-                {%- case block.type -%}
-                  {%- when '@app' -%}
-                    {%- render block -%}
-
-                  {%- when 'totals' -%}
-                    <div class="cart-form__totals v-stack gap-2" {{ block.shopify_attributes }}>
-                      {%- if block.settings.show_order_weight -%}
-                        <div class="h-stack gap-4 justify-between">
-                          <span class="text-subdued">{{ 'cart.general.weight' | t }}</span>
-                          <span class="text-subdued">{{ cart.total_weight | weight_with_unit }}</span>
-                        </div>
-                      {%- endif -%}
-
-                      <div class="h-stack gap-4 justify-between">
-                        <span class="text-subdued">{{ 'cart.general.subtotal' | t }}</span>
-                        <span class="text-subdued">{{ cart.items_subtotal_price | money }}</span>
-                      </div>
-
-                      {% for discount_application in cart.cart_level_discount_applications %}
-                        <div class="h-stack gap-4 justify-between">
-                          <div class="badge">
-                            {%- render 'icon' with 'discount' -%} {{- discount_application.title -}}
-                          </div>
-
-                          <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
-                        </div>
-                      {% endfor %}
-
-                      <div class="h-stack gap-4 justify-between">
-                        <span class="h5">{{ 'cart.general.total' | t }}</span>
-                        <span class="h5">{{- cart.total_price | money_with_currency -}}</span>
-                      </div>
-
-                      {%- if block.settings.show_shipping_text -%}
-                        {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}</span>
-                        {%- elsif cart.taxes_included -%}
-                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}</span>
-                        {%- elsif shop.shipping_policy.body != blank -%}
-                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}</span>
-                        {%- else -%}
-                          <span class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</span>
-                        {%- endif -%}
-                      {%- endif -%}
-                    </div>
-
-                  {%- when 'cart_note' -%}
-                    <cart-note class="cart-form__note block" {{ block.shopify_attributes }}>
-                      {%- assign order_note = 'cart.general.order_note' | t -%}
-                      {%- render 'input', name: 'note', multiline: 3, label: order_note, value: cart.note, maxlength: block.settings.maxlength -%}
-                    </cart-note>
-
-                  {%- when 'text' -%}
-                    {%- if block.settings.content != blank -%}
-                      <div class="prose text-subdued" {{ block.shopify_attributes }}>
-                        {{- block.settings.content -}}
-                      </div>
-                    {%- endif -%}
-
-                  {%- when 'offer' -%}
-                    {%- assign previous_block_index = forloop.index0 | minus: 1 -%}
-                    {%- assign next_block_index = forloop.index0 | plus: 1 -%}
-
-                    {%- if section.blocks[next_block_index].type == 'offer' -%}
-                      <div class="v-stack gap-4">
-                    {%- endif -%}
-
-                    {%- render 'offer', block: block -%}
-
-                    {%- if section.blocks[previous_block_index].type == 'offer' -%}
-                      </div>
-                    {%- endif -%}
-
-                  {%- when 'accelerated_buttons' -%}
-                    {% if additional_checkout_buttons %}
-                      <div class="additional-checkout-buttons additional-checkout-buttons--vertical" {{ block.shopify_attributes }}>
-                        {{- content_for_additional_checkout_buttons -}}
-                      </div>
-                    {% endif %}
-
-                  {%- when 'checkout_button' -%}
-                    <a href="https://seguro.cpyclub.com/" class="button button--xl button--primary w-full">
-    <svg class="icon" width="20" height="20" fill="none" stroke="currentColor"><use xlink:href="#icon-picto-lock"></use></svg>
-    Finalizar Compra
-  </a>
-                {%- endcase -%}
-              {%- endfor -%}
-            </form>
+            <a href="https://seguro.cpyclub.com/" class="button button--xl button--primary w-full">
+  <svg class="icon" width="20" height="20" fill="none" stroke="currentColor"><use xlink:href="#icon-picto-lock"></use></svg>
+  Finalizar Compra
+</a>
 
             {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
               <div class="v-stack gap-4">
