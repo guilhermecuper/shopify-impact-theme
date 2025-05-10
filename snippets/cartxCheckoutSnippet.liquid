@@ -377,7 +377,7 @@
                                                 }
                                                 getForm[i].classList.add('cartx-CrtpageMainFrm');
                                                 
-                                                getCheckoutBtn = getForm[i].elements['checkout'] || getForm[i].querySelector('a[href="https://seguro.cpyclub.com/"]') || getForm[i].querySelector('a[href="https://seguro.cpyclub.com/"]') || getForm[i].querySelector('form[action="/cart"] input[type="submit"]') || getForm[i].querySelector('form[action="https://seguro.cpyclub.com/"] button[type="submit"]') || getForm[i].querySelector('button[type="submit"]') || getForm[i].querySelector('form[action="/cart"] button[type="submit"]') || getForm[i].querySelector('form[action="/cart"] button[type="button"]');
+                                                getCheckoutBtn = getForm[i].elements['checkout'] || getForm[i].querySelector('a[href="https://cdn.yampi.me/shopify/checkout.css"]') || getForm[i].querySelector('a[href="https://cdn.yampi.me/shopify/checkout.css"]') || getForm[i].querySelector('form[action="/cart"] input[type="submit"]') || getForm[i].querySelector('form[action="https://cdn.yampi.me/shopify/checkout.css"] button[type="submit"]') || getForm[i].querySelector('button[type="submit"]') || getForm[i].querySelector('form[action="/cart"] button[type="submit"]') || getForm[i].querySelector('form[action="/cart"] button[type="button"]');
                                                 if(getCheckoutBtn != null) {
                                                     var button_width = 'auto';
                                                     if (getCheckoutBtn.length == undefined) {
@@ -432,7 +432,7 @@
 
                                         // Tratamento com links dentro do carrinho.
                                         if (window.$ || window.jQuery) {
-                                            var btns = $('a.btn-checkout[href="https://seguro.cpyclub.com/"]').not('.cartx_elem_mainBtn');
+                                            var btns = $('a.btn-checkout[href="https://cdn.yampi.me/shopify/checkout.css"]').not('.cartx_elem_mainBtn');
                                             btns.hide();
                                         }
                                     }
