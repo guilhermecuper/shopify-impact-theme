@@ -872,10 +872,17 @@
             "content": "<p>Labubus são figuras colecionáveis com um design único, caracterizadas pela sua aparência fofinha que mistura fofura e travessura.</p>"
           }
         },
+        "item_DptpDQ": {
+          "type": "item",
+          "settings": {
+            "title": "Os Labubus são originais?",
+            "content": "<p>São réplicas idênticas e de mesma qualidade dos originais.</p>"
+          }
+        },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "Vocês enviam para todo o Brasil",
+            "title": "Vocês enviam para todo o Brasil?",
             "content": "<p>Sim, enviamos para todo o Brasil com <strong>Frete Grátis!</strong></p>"
           }
         },
@@ -891,13 +898,6 @@
           "settings": {
             "title": "Como eu cuido do meu Labubu?",
             "content": "<p>Para manter seus bonecos em perfeitas condições:<br/><br/>Evite expô-las à luz solar direta por longos períodos.<br/><br/>Limpe-as cuidadosamente com um pano seco para remover a poeira.<br/><br/>Guarde-as em um local seco para evitar a deterioração do material.</p>"
-          }
-        },
-        "item_DptpDQ": {
-          "type": "item",
-          "settings": {
-            "title": "Os Labubus são originais?",
-            "content": "<p>São réplicas idênticas e de mesma qualidade dos originais.</p>"
           }
         },
         "item_t7JfNc": {
@@ -917,10 +917,10 @@
       },
       "block_order": [
         "166442457738b23caf-0",
+        "item_DptpDQ",
         "166442457738b23caf-1",
         "166442457738b23caf-2",
         "item_yMJwRQ",
-        "item_DptpDQ",
         "item_t7JfNc",
         "item_gXEVyL"
       ],
