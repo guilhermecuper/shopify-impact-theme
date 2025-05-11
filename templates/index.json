@@ -67,7 +67,7 @@
         "transition_type": "fade_with_text",
         "autoplay": true,
         "cycle_speed": 6,
-        "background": "#ffffff",
+        "background": "#fdfaf0",
         "background_gradient": ""
       }
     },
@@ -935,7 +935,7 @@
         "button_text": "",
         "button_url": "",
         "text_position": "start",
-        "background": "#ffffff",
+        "background": "#fdfaf0",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
