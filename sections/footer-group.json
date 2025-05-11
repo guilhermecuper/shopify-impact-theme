@@ -108,7 +108,7 @@
           "type": "text",
           "settings": {
             "title": "Central de Atendimento",
-            "content": "<p><strong>E-mail: contato@copyclub.com.br</strong></p><p><strong>Horário de Atendimento: </strong>Atendimento personalizado, <strong>24 Horas / 7 dias da semana.</strong></p>",
+            "content": "<p><strong>E-mail: contato@cpyclub.com</strong></p><p><strong>Horário de Atendimento: </strong>Atendimento personalizado, <strong>24 Horas / 7 dias da semana.</strong></p>",
             "enable_follow_on_shop": false
           }
         }
