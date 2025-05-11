@@ -60,7 +60,7 @@
         "slide-2"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "allow_transparent_header": false,
         "image_size": "auto",
         "controls_type": "dots",
@@ -68,7 +68,7 @@
         "autoplay": true,
         "cycle_speed": 6,
         "background": "#ffffff",
-        "background_gradient": "linear-gradient(135deg, rgba(111, 177, 252, 1), rgba(23, 29, 33, 1) 98%)"
+        "background_gradient": ""
       }
     },
     "scrolling-text": {
