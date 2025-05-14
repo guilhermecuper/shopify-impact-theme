@@ -372,6 +372,47 @@
         "drag_cursor_color": "#000000"
       }
     },
+    "scrolling_text_e8Q3aB": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "Outfits Labubu",
+        "text_size": "small",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
+    "featured_collection_qPqwar": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "clothing-accessories",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "Ver Todos",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "multiple_images_with_text_epVpMH": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -491,7 +532,7 @@
         "subheading": "",
         "content": "",
         "link_url": "",
-        "background": "",
+        "background": "#a1a9fe",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -1062,6 +1103,8 @@
     "image-with-text-overlay",
     "media-grid",
     "before-after-image",
+    "scrolling_text_e8Q3aB",
+    "featured_collection_qPqwar",
     "multiple_images_with_text_epVpMH",
     "collection_list_Vzihtr",
     "press",
