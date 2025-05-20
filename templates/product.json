@@ -182,6 +182,7 @@
       "block_order": [
         "image_tJiXkE"
       ],
+      "disabled": true,
       "name": "Media with text",
       "settings": {
         "full_width": false,
@@ -340,6 +341,34 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 3,
+        "products": [
+          "labubu®-haveaseat",
+          "labubu-big-into-energy-v3",
+          "labubuthemonster®-exciting-macaron-caixamisteriosa",
+          "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-1",
+          "for-17cm-labubu-clothes-i-ii-idol-dolls-accessories-sweatshirt-heart-beating-hoodie-macaron-for-labubu-doll-jeans-clothes"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Talvez você goste",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#fdfaf0",
+        "product_card_text_color": ""
       }
     },
     "multi_column_fAWN9X": {
@@ -528,32 +557,29 @@
         "heading_gradient": ""
       }
     },
-    "related-products": {
-      "type": "related-products",
+    "featured_collection_3makmC": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
-        "recommendations_count": 6,
-        "products": [
-          "labubu®-haveaseat",
-          "high-quality-replica-labubu-blind-box-labubu-keychain-backpack-decoration-kawaii-kids-toys-surprise-christmas-gift-mystery-box-2",
-          "high-quality-replica-labubu-blind-box-labubu-keychain-backpack-decoration-kawaii-kids-toys-surprise-christmas-gift-mystery-box-1",
-          "labubu-corduroy-mini-doll-clothing-set-toys-cute-hats-clothes-shoes-vinyl-doll-accessories-training-sitting-party-games-toys",
-          "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-1",
-          "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-4"
-        ],
+        "collection": "clothing-accessories",
+        "products": [],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
+        "products_count": 6,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Talvez você goste",
+        "title": "Featured collection",
         "content": "",
+        "link_url": "",
+        "link_text": "View all",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "product_card_background": "#fdfaf0",
+        "product_card_background": "",
         "product_card_text_color": ""
       }
     }
@@ -565,10 +591,11 @@
     "video_UUDLEE",
     "rich_text_ENtxHx",
     "image_with_text_overlay_NPEHCw",
+    "related-products",
     "multi_column_fAWN9X",
     "1746669539fc656420",
     "1746772380b32aac15",
     "tabs_9ttK6c",
-    "related-products"
+    "featured_collection_3makmC"
   ]
 }
