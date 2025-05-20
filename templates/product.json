@@ -58,6 +58,16 @@
           "type": "separator",
           "settings": {}
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "variant",
+            "size_chart_page": ""
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -76,16 +86,6 @@
           "settings": {
             "title": "Informação de Entrega",
             "content": "<p>O tempo de entrega varia de <strong>1</strong> a <strong>3 semanas</strong>, mas 99% das vezes chega antes disso.<br/><br/></p>"
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "variant",
-            "size_chart_page": ""
           }
         },
         "quantity_selector": {
@@ -126,10 +126,10 @@
         "payment_terms",
         "text_zCh8VA",
         "separator",
+        "variant_picker",
         "description",
         "collapsible_text_ww4VTa",
         "collapsible_text_EgJPtF",
-        "variant_picker",
         "quantity_selector",
         "text_68zTcP",
         "buy_buttons",
