@@ -79,7 +79,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "Informação de Entrega",
-            "content": "<p>O tempo de entrega varia de <strong>1</strong> a <strong>3 semanas</strong>, mas 99% das vezes chega antes disso.<br/><br/></p>"
+            "content": "<p>O tempo de entrega varia de <strong>1</strong> a <strong>2 semanas</strong>, mas 99% das vezes chega antes disso.<br/><br/></p>"
           }
         },
         "quantity_selector": {
