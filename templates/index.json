@@ -392,6 +392,74 @@
         "product_card_text_color": ""
       }
     },
+    "logo_list_dnxAND": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_HQYBQW": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/4_89b0524f-e138-4e31-9ca5-7caeaf4dcc58.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_y8bLMa": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/3_51c8c9a1-b4c4-44c2-9ca2-6c8b56f34ff6.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_DnXWJc": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/2_28e8cd47-3379-4b2e-b127-96f8eea2ace3.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_6d3B3A": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/3_342e463b-af78-47b1-aae5-27afc4c5c167.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_LgmBah": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/4_4ddb3b84-1d5d-422a-b8a7-53a89439d8ad.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_HQYBQW",
+        "logo_y8bLMa",
+        "logo_DnXWJc",
+        "logo_6d3B3A",
+        "logo_LgmBah"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Logo list",
+        "content": "",
+        "text_alignment": "start",
+        "items_per_row": 4,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
     "multiple_images_with_text_epVpMH": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -1111,6 +1179,7 @@
     "before-after-image",
     "scrolling_text_e8Q3aB",
     "featured_collection_qPqwar",
+    "logo_list_dnxAND",
     "multiple_images_with_text_epVpMH",
     "collection_list_Vzihtr",
     "press",
