@@ -443,6 +443,7 @@
         "logo_6d3B3A",
         "logo_LgmBah"
       ],
+      "disabled": true,
       "name": "Logo list",
       "settings": {
         "full_width": true,
