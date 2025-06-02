@@ -83,6 +83,7 @@
         },
         "collapsible_text_txrrTN": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "Frete",
             "content": "<p>Frete Grátis para todo o Brasil!  </p>"
@@ -90,6 +91,7 @@
         },
         "collapsible_text_ww4VTa": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "Nossas Garantias",
             "content": "<p>Nossa garantia é simples: compre, experimente e se você não estiver 100% satisfeito, reembolsaremos você dentro de 30 dias—sem perguntas. Produtos defeituosos são substituídos imediatamente e nossa equipe de suporte dedicada está aqui para ajudar. Sua compra está sempre protegida!</p>"
@@ -97,6 +99,7 @@
         },
         "collapsible_text_EgJPtF": {
           "type": "collapsible_text",
+          "disabled": true,
           "settings": {
             "title": "Informação de Entrega",
             "content": "<p>O tempo de entrega varia de <strong>1</strong> a <strong>2 semanas</strong>, mas 99% das vezes chega antes disso.<br/><br/></p>"
