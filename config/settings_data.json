@@ -134,6 +134,11 @@
         "type": "shopify://apps/essential-trust-badges/blocks/app-embed/0ff65b25-07e1-408e-950f-f54dd3d1751b",
         "disabled": false,
         "settings": {}
+      },
+      "11102627217255699944": {
+        "type": "shopify://apps/ultimate-scarcity-pro/blocks/app-embed-block/5c99c3bb-3d88-48d8-a270-7efd59282ead",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
