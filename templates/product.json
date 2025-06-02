@@ -51,7 +51,7 @@
         "text_zCh8VA": {
           "type": "text",
           "settings": {
-            "text": "<p>Cada boneco vem em uma blind box, trazendo o charme da surpresa e o desejo de completar a coleção.<br/><br/>Seu visual único mistura fofura com atitude, sendo perfeito para decorar ou presentear.<br/><br/>Ter um Labubu é estar conectado com o que há de mais atual, criativo e desejado no mundo pop e fashion.</p><h6>OBS: O produto se trata de uma réplica de altíssima qualidade!</h6>"
+            "text": "<p>Cada boneco vem em uma blind box, trazendo o charme da surpresa e o desejo de completar a coleção.<br/><br/>Seu visual único mistura fofura com atitude, sendo perfeito para decorar ou presentear.<br/><br/>Ter um Labubu é estar conectado com o que há de mais atual, criativo e desejado no mundo pop e fashion.</p><h6>OBS: O produto se trata de uma réplica premium!</h6>"
           }
         },
         "separator": {
@@ -403,34 +403,6 @@
         "overlay_opacity": 30
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "recommendations_count": 3,
-        "products": [
-          "labubu®-haveaseat",
-          "labubu-big-into-energy-v3",
-          "labubuthemonster®-exciting-macaron-caixamisteriosa",
-          "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-1",
-          "for-17cm-labubu-clothes-i-ii-idol-dolls-accessories-sweatshirt-heart-beating-hoodie-macaron-for-labubu-doll-jeans-clothes"
-        ],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Talvez você goste",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "#fdfaf0",
-        "product_card_text_color": ""
-      }
-    },
     "multi_column_fAWN9X": {
       "type": "multi-column",
       "blocks": {
@@ -490,6 +462,34 @@
         "text_color": ""
       }
     },
+    "1746772380b32aac15": {
+      "type": "apps",
+      "blocks": {
+        "reelup_shoppable_videos_reels_reelup_playlist_slider_kertPV": {
+          "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup-playlist-slider/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
+          "settings": {
+            "playlist_id": "",
+            "debugging_script": ""
+          }
+        }
+      },
+      "block_order": [
+        "reelup_shoppable_videos_reels_reelup_playlist_slider_kertPV"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
     "1746669539fc656420": {
       "type": "apps",
       "blocks": {
@@ -523,32 +523,32 @@
         "review_button_text_color": "#ffffff"
       }
     },
-    "1746772380b32aac15": {
-      "type": "apps",
-      "blocks": {
-        "reelup_shoppable_videos_reels_reelup_playlist_slider_kertPV": {
-          "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup-playlist-slider/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
-          "settings": {
-            "playlist_id": "",
-            "debugging_script": ""
-          }
-        }
-      },
-      "block_order": [
-        "reelup_shoppable_videos_reels_reelup_playlist_slider_kertPV"
-      ],
+    "related-products": {
+      "type": "related-products",
       "settings": {
+        "recommendations_count": 3,
+        "products": [
+          "labubu®-haveaseat",
+          "labubu-big-into-energy-v3",
+          "labubuthemonster®-exciting-macaron-caixamisteriosa",
+          "17cm-cute-mini-plush-dolls-clothes-outfit-accessories-for-korea-kpop-exo-labubu-idol-dolls-shark-onesie-clothing-diy-girl-gift-1",
+          "for-17cm-labubu-clothes-i-ii-idol-dolls-accessories-sweatshirt-heart-beating-hoodie-macaron-for-labubu-doll-jeans-clothes"
+        ],
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Talvez você goste",
+        "content": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#fdfaf0",
+        "product_card_text_color": ""
       }
     },
     "featured_collection_3makmC": {
