@@ -68,6 +68,13 @@
             "size_chart_page": ""
           }
         },
+        "collapsible_text_txrrTN": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Frete",
+            "content": "<p>Frete Grátis para todo o Brasil!  </p>"
+          }
+        },
         "collapsible_text_ww4VTa": {
           "type": "collapsible_text",
           "settings": {
@@ -127,6 +134,7 @@
         "text_zCh8VA",
         "separator",
         "variant_picker",
+        "collapsible_text_txrrTN",
         "collapsible_text_ww4VTa",
         "collapsible_text_EgJPtF",
         "quantity_selector",
